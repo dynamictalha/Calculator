@@ -13,6 +13,9 @@ function showResult(){
     if(result.value == ""){
         result.value = "";
     }
+    else if(result.value=="0/0"){
+        result.value = "Math Error";
+    }
     else{
         result.value = eval(result.value);
     }
